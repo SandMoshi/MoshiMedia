@@ -570,7 +570,7 @@ Our Team Style
 Testimonials Style
 ========================================================================== */
 #testimonials {
-  background-image: url("../img/testimonials/Testimonials.jpg");
+  background-image: url("../img/testimonials/Testimonials2.jpg");
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -794,5 +794,21 @@ Custom Styles
 /*	text-align: center !important*/
 }
 
-#team{
+#portfolio{
+	padding-bottom: 120px;
 }
+#work-process {
+	background: #24242a;
+	padding: 120px 0px;
+}
+#work-process h2, #work-process p, #work-process span, #work-process h4{
+	color: white;
+}
+#work-process hr {
+	border-color: white;
+}
+#testimonials{
+	padding: 100px 0px;
+}
+
+

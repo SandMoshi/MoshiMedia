@@ -91,7 +91,10 @@ $(document).ready(function () {
         var mapOptions = {
             center: new google.maps.LatLng(54.422471, -110.2044194,11.75),
             zoom: 11,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+					  scrollwheel: false,
+						disableDefaultUI: true,
+					
         }
         var map = new google.maps.Map(mapCanvas, mapOptions);
     }
@@ -109,3 +112,41 @@ $(document).ready(function () {
         preloader.remove();
     });
 })
+
+   /***************** Contact Form Submission ******************/
+
+$(document).ready(function (e){
+$("#main-contact-form").on('submit',(function(e){
+	e.preventDefault();
+	$('#sendingemail').fadeIn();
+		$.ajax({
+		url: "../sendemail.php",
+		type: "POST",
+		data:  new FormData(this),
+		contentType: false,
+		cache: false,
+		processData: false,
+		success: function(data){
+			console.log(data);
+			if (data.type == 'Error') {
+					//alert(data.message);
+				  $('#sendingemail').fadeOut();
+				  $("#notsent").html(data.message).fadeIn();
+				}
+			else{
+				$('#sendingemail').fadeOut();
+				$('#emailsent').fadeIn();
+			  //alert(data.message);
+			}
+		},
+	  error: function(XHR,textStatus,errorThrown) {
+    		//alert("error");
+			  console.log(XHR.status + "..." + textStatus + "..." + errorThrown);
+			  alert(XHR.status);
+    		alert(textStatus);
+    		alert(errorThrown);
+		}
+	}	        
+ );
+}));
+});
