@@ -810,5 +810,53 @@ Custom Styles
 #testimonials{
 	padding: 100px 0px;
 }
+.btn-transparent-nohover{
+	  background: transparent;
+    border: 3px solid #fff;
+    padding: 15px 30px;
+    font-size: 14px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #fff;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.btn-light-nohover {
+    background: #fff;
+    border: 3px solid #fff;
+    padding: 15px 30px;
+    font-size: 14px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #0d0d0d;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
 
+.btn-transparent-nohover:hover{
+	cursor: auto;
+}
+.btn-light-nohover:hover{
+	cursor: auto;
+}
+footer h1 span {
+	font-weight:100;
+	letter-spacing: 11px;
+	letter-spacing: 6px;
+}
+footer h1 {
+	letter-spacing: 6px
+}
 
