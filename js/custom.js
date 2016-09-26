@@ -150,3 +150,9 @@ $("#main-contact-form").on('submit',(function(e){
  );
 }));
 });
+   /***************** Navbar Collapse on Click ******************/
+$(document).ready(function (e){
+		$('.nav>li>a').on('click', function(){
+				$('.navbar-collapse').collapse('hide');
+		});
+});

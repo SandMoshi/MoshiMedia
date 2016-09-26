@@ -786,6 +786,7 @@ Media Queries Style
 /* ==========================================================================
 Custom Styles
 ========================================================================== */
+
 .media-body p{
 /*	text-align: center !important;*/
 /*	text-align: justify !important;*/
@@ -859,4 +860,19 @@ footer h1 span {
 footer h1 {
 	letter-spacing: 6px
 }
+/*Media Query for tablets, 768px and up*/
+@media (min-width: 768px) {
+	.nav{
+		padding-left: 40px;
+	}
+}
 
+@media (max-width: 768px) {
+	nav{
+		width: 100vw;
+	}
+	.navbar-default .nav > li > a {
+		padding: 15px;
+	}
+	
+}
