@@ -80,11 +80,11 @@
 
     $name = @trim(stripslashes($_POST['name'])); 
     $clientemail = @trim(stripslashes($_POST['email'])); 
-   	$subject = @trim(stripslashes($_POST['subject']));
+   	$phone = @trim(stripslashes($_POST['phone']));
     $subject = 'none';
    	$message = @trim(stripslashes($_POST['message']));
 
-    $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $clientemail . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
+    $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $clientemail . "\n\n" . 'Phone: ' . $phone . "\n\n" . 'Message: ' . $message;
 
 	 $email = new PHPMailer();		
 
