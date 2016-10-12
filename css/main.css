@@ -860,6 +860,17 @@ footer h1 span {
 footer h1 {
 	letter-spacing: 6px
 }
+
+.footer_tagline{
+	display: inline;
+}
+
+.footer_Media{
+	font-weight: 100;
+/*    letter-spacing: 11px;*/
+   letter-spacing: 6px;
+}
+
 /*Media Query for tablets, 768px and up*/
 @media (min-width: 768px) {
 	.nav{
@@ -876,3 +887,4 @@ footer h1 {
 	}
 	
 }
+
