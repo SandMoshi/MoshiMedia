@@ -798,6 +798,11 @@ Custom Styles
 #portfolio{
 	padding-bottom: 120px;
 }
+
+#portfolio .showcase_item {
+	margin-top: 10px;
+}
+
 #work-process {
 	background: #24242a;
 	padding: 120px 0px;
