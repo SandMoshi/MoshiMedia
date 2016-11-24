@@ -12,6 +12,20 @@ $(document).ready(function () {
     /***************** Page Scroll ******************/
 
     $(function () {
+		 
+		 
+		 if( window.innerWidth > 767 ){
+       // offset code to 53 on not mobile
+        $('a.page-scroll').bind('click', function (event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top -50
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+		 }
+		 else{
+        // offset code to 0 on mobile
         $('a.page-scroll').bind('click', function (event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
@@ -19,6 +33,7 @@ $(document).ready(function () {
             }, 1500, 'easeInOutExpo');
             event.preventDefault();
         });
+		 }
     });
 
     /***************** Scroll Spy ******************/
@@ -91,6 +106,7 @@ $(document).ready(function () {
         var mapOptions = {
             center: new google.maps.LatLng(54.422471, -110.2044194,11.75),
             zoom: 11,
+			   draggable: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
 					  scrollwheel: false,
 						disableDefaultUI: true,

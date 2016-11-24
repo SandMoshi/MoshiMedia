@@ -798,6 +798,11 @@ Custom Styles
 #portfolio{
 	padding-bottom: 120px;
 }
+
+#portfolio .showcase_item {
+	margin-top: 10px;
+}
+
 #work-process {
 	background: #24242a;
 	padding: 120px 0px;
@@ -852,6 +857,11 @@ Custom Styles
 .btn-light-nohover:hover{
 	cursor: auto;
 }
+
+#testimonials{
+	background-attachment: scroll;
+}
+
 footer h1 span {
 	font-weight:100;
 	letter-spacing: 11px;
@@ -860,6 +870,17 @@ footer h1 span {
 footer h1 {
 	letter-spacing: 6px
 }
+
+.footer_tagline{
+	display: inline;
+}
+
+.footer_Media{
+	font-weight: 100;
+/*    letter-spacing: 11px;*/
+   letter-spacing: 6px;
+}
+
 /*Media Query for tablets, 768px and up*/
 @media (min-width: 768px) {
 	.nav{
@@ -876,3 +897,4 @@ footer h1 {
 	}
 	
 }
+
